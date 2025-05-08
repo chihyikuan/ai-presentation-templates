@@ -1,51 +1,267 @@
-# AI Presentation Templates
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Presentation Templates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4ECDC4;
+            --secondary-color: #FF6B6B;
+            --bg-color: #1a1a1a;
+            --text-color: #ffffff;
+            --card-bg: rgba(255,255,255,0.05);
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
 
-A collection of modern, interactive presentation templates that can be easily customized using AI. These templates are designed to help create engaging presentations with minimal effort.
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
 
-## Current Templates
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, rgba(78,205,196,0.1) 0%, rgba(255,107,107,0.1) 100%);
+            border-radius: 15px;
+        }
 
-### 1. Dual Engagement Template (`demo.html`)
-A modern presentation template that demonstrates the power of combining verbal and visual elements in presentations. Features:
-- Responsive design that works across all devices
-- Interactive elements with hover effects
-- Smooth animations and transitions
-- Built-in navigation controls
-- Example sections from real-world presentations (Apple and NVIDIA)
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-## How to Use
+        .description {
+            font-size: 1.2rem;
+            color: #ddd;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-1. Choose a template from the collection
-2. Use AI to customize the content:
-   - Replace the text content
-   - Update images and videos
-   - Modify colors and styles
-   - Add or remove sections as needed
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--card-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
 
-## Features
+        .github-link:hover {
+            transform: translateY(-2px);
+            background: rgba(255,255,255,0.1);
+        }
 
-- **Modern Design**: Clean, professional layouts with smooth animations
-- **Interactive Elements**: Hover effects and transitions for better engagement
-- **Responsive**: Works perfectly on all devices
-- **AI-Friendly**: Easy to modify using AI tools
-- **Customizable**: Flexible structure for different presentation needs
+        .github-link i {
+            margin-right: 0.5rem;
+        }
 
-## Future Templates
+        .section {
+            margin-bottom: 3rem;
+        }
 
-More templates will be added to this repository, including:
-- Technical presentations
-- Product launches
-- Educational content
-- Data visualization
-- Storytelling formats
+        h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
 
-## Contributing
+        .templates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
 
-Feel free to contribute by:
-1. Adding new templates
-2. Improving existing templates
-3. Suggesting new features
-4. Reporting issues
+        .template-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
 
-## License
+        .template-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
 
-MIT License - feel free to use these templates for any purpose. 
+        .template-card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+
+        .template-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .template-card a:hover {
+            color: var(--secondary-color);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        li:before {
+            content: "•";
+            color: var(--secondary-color);
+            margin-right: 0.5rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255,255,255,0.08);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI Presentation Templates</h1>
+            <p class="description">A collection of modern, interactive presentation templates that can be easily customized using AI. These templates are designed to help create engaging presentations with minimal effort.</p>
+            <a href="https://github.com/chihyikuan/ai-presentation-templates" class="github-link">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Current Templates</h2>
+            <div class="templates-grid">
+                <div class="template-card">
+                    <h3>Dual Engagement Template</h3>
+                    <ul>
+                        <li>Responsive design that works across all devices</li>
+                        <li>Interactive elements with hover effects</li>
+                        <li>Smooth animations and transitions</li>
+                        <li>Built-in navigation controls</li>
+                        <li>Example sections from real-world presentations</li>
+                    </ul>
+                    <a href="templates/dual-engagement.html">View Template →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Modern Design</h3>
+                    <p>Clean, professional layouts with smooth animations</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Interactive Elements</h3>
+                    <p>Hover effects and transitions for better engagement</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Responsive</h3>
+                    <p>Works perfectly on all devices</p>
+                </div>
+                <div class="feature-card">
+                    <h3>AI-Friendly</h3>
+                    <p>Easy to modify using AI tools</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>How to Use</h2>
+            <div class="template-card">
+                <ol>
+                    <li>Choose a template from the collection</li>
+                    <li>Use AI to customize the content:
+                        <ul>
+                            <li>Replace the text content</li>
+                            <li>Update images and videos</li>
+                            <li>Modify colors and styles</li>
+                            <li>Add or remove sections as needed</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Future Templates</h2>
+            <div class="template-card">
+                <ul>
+                    <li>Technical presentations</li>
+                    <li>Product launches</li>
+                    <li>Educational content</li>
+                    <li>Data visualization</li>
+                    <li>Storytelling formats</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Contributing</h2>
+            <div class="template-card">
+                <p>Feel free to contribute by:</p>
+                <ul>
+                    <li>Adding new templates</li>
+                    <li>Improving existing templates</li>
+                    <li>Suggesting new features</li>
+                    <li>Reporting issues</li>
+                </ul>
+                <a href="https://github.com/chihyikuan/ai-presentation-templates/issues">Report an Issue →</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>MIT License - feel free to use these templates for any purpose.</p>
+            <a href="https://github.com/chihyikuan/ai-presentation-templates" class="github-link">
+                <i class="fab fa-github"></i> Star on GitHub
+            </a>
+        </div>
+    </div>
+</body>
+</html> 
