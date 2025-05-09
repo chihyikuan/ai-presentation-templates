@@ -4,7 +4,7 @@ A collection of modern, interactive presentation templates that can be easily cu
 
 ## Current Templates
 
-### 1. Dual Engagement Template (`demo.html`)
+### 1. Dual Engagement Template (`html`)
 A modern presentation template that demonstrates the power of combining verbal and visual elements in presentations. Features:
 - Responsive design that works across all devices
 - Interactive elements with hover effects
